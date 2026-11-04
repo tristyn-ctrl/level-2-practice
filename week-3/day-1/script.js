@@ -13,8 +13,19 @@ const exampleIsOpen = true;          // boolean (true or false)
 console.log(exampleName, exampleYears, exampleIsOpen);
 console.log(typeof exampleName);     // typeof tells you the type
 
+
+
+
 // TODO: Make 3 variables for YOUR truck: a name, a number, and a true/false.
+const myTruckName = "Baddie Bitez";
+const myYearsOpen = 2;
+const isOpen = true;
+
 // TODO: console.log them, and log the typeof each one.
+console.log(myTruckName, myYearsOpen, isOpen);
+console.log(typeof myTruckName, typeof myYearsOpen, typeof isOpen);  
+
+
 
 
 // ---------- Step 2: An array (a list) ----------
@@ -24,7 +35,14 @@ console.log(exampleMenu[0]);         // first item: index 0
 console.log(exampleMenu.length);     // how many items
 
 // TODO: Make an array of 3 or more things YOUR truck sells.
+const myMenu = ["wings", "loaded fries", "cajun chicken pasta"];
+
 // TODO: Log the first item, the last item, and how many items there are.
+console.log(myMenu[0]);
+console.log(myMenu[2]);
+console.log(myMenu.length);
+
+  
 
 
 // ---------- Step 3: An object (one thing with details) ----------
@@ -34,7 +52,13 @@ console.log(exampleItem.name);       // dot notation
 console.log(exampleItem["price"]);   // bracket notation
 
 // TODO: Make an object for one of YOUR menu items (name, price, spicy).
+const myItem = { name: "wings", price: 12.50, spicy: true};
+
 // TODO: Log one property with dot notation and one with bracket notation.
+console.log(myItem.wings);
+console.log(myItem["price"]);
+
+
 
 
 // ---------- Step 4: A function ----------
@@ -45,8 +69,12 @@ function addTip(price, tip) {
 console.log(addTip(10, 2));          // 12
 
 // TODO: Write a function orderTotal(price, quantity) that RETURNS price * quantity.
-// TODO: Before you run it, guess what orderTotal(4.5, 3) gives. Then log it.
+function orderTotal(price, quantity) {
+  return price * quantity;
+}
 
+// TODO: Before you run it, guess what orderTotal(4.5, 3) gives. Then log it.
+console.log(orderTotal(12.50, 2))
 
 // ---------- Extra practice (if you finish early) ----------
 // 1. Change your menu item's price AFTER you made the object, then log it again.
