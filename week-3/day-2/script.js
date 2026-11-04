@@ -12,11 +12,19 @@ const exampleTruck = {
     return "Welcome to " + this.name + "!";
   },
 };
+
 console.log("Step 1:", exampleTruck.describe());   // Welcome to Taco Rocket!
 
 // TODO: Make an object for YOUR truck with a name and a describe() method that uses this.name.
-// TODO: Log the result of calling describe().
+const myTruck = {
+  name: "Baddie Bitez",
+  describe: function () {
+    return "Welcome to " + this.name + "!";
+  },
+}
 
+// TODO: Log the result of calling describe().
+console.log("Step 1:", myTruck.describe());
 
 // ---------- Step 2: Compare with an arrow function ----------
 // Example:
@@ -43,6 +51,12 @@ console.log("Step 3 object:", exampleParsed);
 console.log("Step 3 price:", exampleParsed.price);
 
 // TODO: Write a JSON string for one of YOUR menu items. Parse it. Log one property.
+const myJSON = '{"name": "wings", "price": 12.5}';
+const myParsed = JSON.parse(myJSON);
+console.log("Step 3 text:", myJSON);
+console.log("Step 3 wings:", myParsed);
+console.log("Step 3 price:" , myParsed.price);
+
 
 
 // ---------- Step 4: JavaScript → JSON text ----------
@@ -51,7 +65,8 @@ const exampleBack = JSON.stringify(exampleParsed);
 console.log("Step 4:", exampleBack, typeof exampleBack);   // it's a string again
 
 // TODO: Turn your parsed menu item back into a JSON string and log it with typeof.
-
+const menuBack = JSON.stringify(myParsed);
+console.log("Step 4:", menuBack, typeof menuBack);
 
 // ---------- Extra practice (if you finish early) ----------
 // 1. Make a second truck object with its own describe() method.
