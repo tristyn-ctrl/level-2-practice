@@ -70,7 +70,7 @@ let total = 0
 for (let i = 0; i< menu.length; i ++) {
   total = total [i].price;
 }
-console.log("items;", total);
+console.log("Total;", total);
 
 // ---------- Extra (if you finish early): only SOME items ----------
 // EXAMPLE: logs only the items that cost LESS than $5.
