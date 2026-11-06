@@ -68,7 +68,7 @@ console.log("Items:", count);
 // Change: count → total, and + 1 → + menu[i].price
 let total = 0
 for (let i = 0; i< menu.length; i ++) {
-  total = total [i].price;
+  total = menu[i].price;
 }
 console.log("Total;", total);
 
@@ -84,3 +84,9 @@ for (let i = 0; i < menu.length; i++) {
 
 // YOUR TURN: log only the items that cost MORE than $5, like "Fancy: Burrito".
 // Change: < → >   and   "Cheap:" → "Fancy:"
+
+for (let i = 0; i < menu.length; i ++) {
+  if (menu[i].price > 13) {
+    console.log("Fancy:", menu[i].name);
+  }
+}
