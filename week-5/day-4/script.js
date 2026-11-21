@@ -39,7 +39,7 @@ statusText.textContent = "Loading...";
   title.textContent = recipe.name;
   card.appendChild(title);
 
-  recipeArea.appendChild(card);
+    recipeArea.appendChild(card);
 
   // YOUR TURN: add 2 more fields to the card, under the title. For example:
   //   a <p> with the cuisine:           "Cuisine: Italian"
@@ -50,12 +50,13 @@ const cuisine = document.createElement("p");
 cuisine.className = "fs-3 h4";
 cuisine.textContent = "Cuisine: " + recipe.cuisine;
 card.appendChild(cuisine);
-recipeArea.appendChild(card);
+recipeArea.appendChild(card); 
   }
+  
 
-button.addEventListener("click", loadRecipe);
+  button.addEventListener("click", loadRecipe);
 
-
+  
 
 
 // ---------- Step 2: a loading message ----------
